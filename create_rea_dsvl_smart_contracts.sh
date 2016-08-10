@@ -1,5 +1,9 @@
 ## declare an array variable
-declare -a arr=("ReaModel" "Agent" "ExternalAgent" "InternalAgent" "Duality" "ConversionDuality" "ExchangeDuality" "DecrementConversionEvent" "IncrementConversionEvent" "DecrementExchangeEvent" "IncrementExchangeEvent" "ResourceType" "Resource" "DecrementConversionCommitment" "IncrementConversionCommitment" "DecrementExchangeCommitment" "IncrementExchangeCommitment" "ConversionReciprocity" "ExchangeReciprocity" "Commitment" "Reciprocity" "DecrementTerm" "IncrementTerm" "Term" "Contract")
+
+echo " warning.. if you run this prepare to overwrite all your smart contracts :| "
+read text
+
+declare -a arr=("ReaModel" "Agent" "ExternalAgent" "InternalAgent" "Duality" "ConversionDuality" "ExchangeDuality" "Event"  "DecrementConversionEvent" "IncrementConversionEvent" "DecrementExchangeEvent" "IncrementExchangeEvent" "ResourceType" "Resource" "DecrementConversionCommitment" "IncrementConversionCommitment" "DecrementExchangeCommitment" "IncrementExchangeCommitment" "ConversionReciprocity" "ExchangeReciprocity" "Commitment" "Reciprocity" "DecrementTerm" "IncrementTerm" "Term" "Contract")
 
 ## now loop through the above array
 for i in "${arr[@]}"
