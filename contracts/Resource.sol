@@ -1,7 +1,7 @@
-import "ResourceType.sol";
+import "ReaModel.sol";
 
-contract Resource {
-  function Resource() {
+contract Resource is ReaModel {
+  function Resource() ReaModel("Resource") {
     // constructor
   }
 }
